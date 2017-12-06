@@ -31,6 +31,10 @@ export default new Router({
               component: List
             }
           ]
+        },
+        {
+          path: '*',
+          redirect: '/home'
         }
       ]
     }
