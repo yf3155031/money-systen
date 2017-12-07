@@ -1,12 +1,23 @@
 <template>
+<!-- 模块名 + 元素名 + 修饰器 -->
   <div>
+    <headtop v-bind:head-title="headTitle"></headtop>
     <router-view/>
   </div>
 </template>
 
 <script>
+import header from './common/header/Header'
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      headTitle: '我的主页'
+    }
+  },
+  components: {
+    headtop: header
+  }
 }
 </script>
 

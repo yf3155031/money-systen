@@ -3,8 +3,9 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import App from '@/App'
 import Home from '@/page/home/Home'
-import Test from '@/components/Test'
+// import Test from '@/components/Test'
 import List from '@/components/List'
+import Middle from '@/page/home/middle/Middle'
 Vue.use(Router)
 
 export default new Router({
@@ -23,8 +24,8 @@ export default new Router({
           component: Home,
           children: [
             {
-              path: 'test',
-              component: Test
+              path: 'middle',
+              component: Middle
             },
             {
               path: 'list',

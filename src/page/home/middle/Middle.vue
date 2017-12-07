@@ -1,5 +1,7 @@
 <template>
-  <div class="ziti">this is {{ msg }} + {{ money }}</div>
+  <div class="ziti">
+    <p class="title">这是middle {{ msg }} + {{ money }}</p>
+  </div>
 </template>
 <script>
 export default {
